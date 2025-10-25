@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import ProjectsSelection from "@/components/projects-selection";
 import data from "@/data.json";
+import { resolveAssetPath } from "@/utils/assets";
 
 export const Route = createFileRoute("/projets/$id")({
 	component: RouteComponent,
@@ -43,7 +44,7 @@ function RouteComponent() {
 		<article id="project-details">
 			<div className="aspect-6/5 w-full h-[40vh] sm:h-[50vh] md:h-[60vh] overflow-hidden mb-3 sm:mb-4 absolute top-0 left-0">
 				<img
-					src={project.image}
+					src={resolveAssetPath(project.image)}
 					alt={project.title}
 					className="w-full h-full brightness-70 object-cover object-top transition-transform duration-300 group-hover:scale-105"
 					loading="eager"
@@ -134,7 +135,7 @@ function RouteComponent() {
 				</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24 xl:gap-32 pb-12 sm:pb-16">
 					<img
-						src={project.image}
+						src={resolveAssetPath(project.image)}
 						alt={`Vue principale du projet ${project.title}`}
 						className="w-full h-auto"
 						loading="lazy"
@@ -144,7 +145,7 @@ function RouteComponent() {
 					{project.details.related_posts.map((p) => (
 						<img
 							key={p.id}
-							src={p.image}
+							src={resolveAssetPath(p.image)}
 							alt={`Variation du projet ${project.title}`}
 							className="w-full h-auto"
 							loading="lazy"

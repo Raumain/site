@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { resolveAssetPath } from "@/utils/assets";
 
 export default function ProjectCard({
 	project,
@@ -16,7 +17,7 @@ export default function ProjectCard({
 			>
 				<div className="aspect-6/5 w-full overflow-hidden bg-[#252525] mb-3 sm:mb-4">
 					<img
-						src={project.image}
+						src={resolveAssetPath(project.image)}
 						alt={`Aperçu du projet ${project.title}`}
 						className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
 						loading="lazy"
