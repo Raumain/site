@@ -1,0 +1,28 @@
+{
+	"short_name": "Le STUDYO",
+	"name": "Le STUDYO - Graphiste Freelance Normandie",
+	"description": "Graphiste freelance spécialisé en design sportif et graphisme basé en Normandie",
+	"icons": [
+		{
+			"src": "logo.ico",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "logo.svg",
+			"type": "image/svg+xml",
+			"sizes": "192x192"
+		},
+		{
+			"src": "logo.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#191919",
+	"background_color": "#191919",
+	"lang": "fr",
+	"dir": "ltr"
+}

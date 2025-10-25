@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/Apotek_Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/Apotek_Comp_Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/logo_full.svg" as="image" />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://api.web3forms.com" />
+    <link rel="preconnect" href="https://api.web3forms.com" crossorigin />
+    
+    <!-- Favicon and theme -->
+    <link rel="icon" href="/logo.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#191919" />
+    
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Le STUDYO - Graphiste freelance spécialisé en design sportif et graphisme, basé en Normandie. Création d'affiches, identités visuelles, brochures et contenus digitaux pour clubs sportifs et entreprises."
+    />
+    <meta name="keywords" content="graphiste freelance, design sportif, normandie, identité visuelle, affiche, brochure, design graphique, matchday poster" />
+    <meta name="author" content="Yann Baudin - Le STUDYO" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Le STUDYO - Graphiste Freelance en Normandie" />
+    <meta property="og:description" content="Graphiste freelance spécialisé en design sportif et graphisme basé en Normandie." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Le STUDYO - Graphiste Freelance en Normandie" />
+    <meta name="twitter:description" content="Graphiste freelance spécialisé en design sportif et graphisme basé en Normandie." />
+    
+    <!-- GitHub Pages SPA redirect script -->
+    <script>
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
+    <title>Le STUDYO - Graphiste Freelance en Normandie | Design Sportif & Graphisme</title>
+  </head>
+  <body style="background-color: #191919;">
+    <noscript>Vous devez activer JavaScript pour utiliser ce site.</noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "Apotek";
+	src: url("/Apotek_Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Apotek Condensed";
+	src: url("/Apotek_Comp_Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@import "tailwindcss";
+
+.font-apotek {
+	font-family:
+		"Apotek", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, sans-serif;
+}
+.font-apotek-condensed {
+	font-family:
+		"Apotek Condensed", system-ui, -apple-system, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+	animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+	animation-name: fade-in;
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-up-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-slide-up-fade {
+	animation: slide-up-fade-in 0.8s ease-out forwards;
+	opacity: 0;
+}
+
+.animate-delay-100 {
+	animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+	animation-delay: 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation-duration: 0.1s;
+	}
+	
+	.animate-slide-up-fade {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
