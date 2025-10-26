@@ -147,7 +147,7 @@ function RouteComponent() {
 					))}
 				</div>
 			</div>
-			<ProjectsSelection />
+			<ProjectsSelection excludeId={project.id} />
 		</article>
 	);
 }
