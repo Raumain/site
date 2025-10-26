@@ -13,7 +13,6 @@ export default function ProjectCard({
 				params={{ id: String(project.id) }}
 				className="group flex flex-col focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
 				aria-label={`Voir le projet ${project.title}`}
-				viewTransition
 			>
 				<div className="aspect-6/5 w-full overflow-hidden bg-[#252525] mb-3 sm:mb-4">
 					<img
@@ -23,9 +22,6 @@ export default function ProjectCard({
 						loading="lazy"
 						width="600"
 						height="500"
-						style={{
-							viewTransitionName: `project-image-${project.id}`,
-						}}
 					/>
 				</div>
 				<h3 className="text-white font-apotek text-base sm:text-lg md:text-xl mb-1 sm:mb-2 text-left group-hover:text-[#44FFDD] transition-colors duration-200">

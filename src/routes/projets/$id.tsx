@@ -51,20 +51,13 @@ function RouteComponent() {
 					fetchPriority="high"
 					width="1920"
 					height="1080"
-					style={{
-						viewTransitionName: `project-image-${project.id}`,
-					}}
 				/>
 			</div>
 			<div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-[45vh] sm:mt-[55vh] md:mt-[65vh]">
 				<nav aria-label="Fil d'ariane" className="mb-4 sm:mb-6">
 					<ol className="flex items-center gap-2 text-lg text-gray-400 font-apotek-condensed">
 						<li>
-							<Link
-								to="/"
-								className="hover:text-[#44FFDD] transition-colors"
-								viewTransition
-							>
+							<Link to="/" className="hover:text-[#44FFDD] transition-colors">
 								Accueil
 							</Link>
 						</li>
@@ -73,7 +66,6 @@ function RouteComponent() {
 							<Link
 								to="/projets"
 								className="hover:text-[#44FFDD] transition-colors"
-								viewTransition
 							>
 								Projets
 							</Link>

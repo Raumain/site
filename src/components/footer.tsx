@@ -56,7 +56,6 @@ export default function Footer() {
 							<Link
 								to="/projets"
 								className="text-white text-base sm:text-lg md:text-xl font-apotek-condensed hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:text-[#44FFDD] focus:underline"
-								viewTransition
 							>
 								Projets
 							</Link>
@@ -75,7 +74,6 @@ export default function Footer() {
 							<Link
 								to="/a-propos"
 								className="text-white text-base sm:text-lg md:text-xl font-apotek-condensed hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:text-[#44FFDD] focus:underline"
-								viewTransition
 							>
 								À Propos
 							</Link>

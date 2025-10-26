@@ -36,9 +36,8 @@ export default function Navbar() {
 					<div className="shrink-0">
 						<Link
 							to="/"
-							className="block focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919] rounded"
+							className="block focus:outline-none rounded"
 							aria-label="Retour à l'accueil"
-							viewTransition
 						>
 							<img
 								src={logo}
@@ -60,7 +59,6 @@ export default function Navbar() {
 									activeProps={{
 										className: "text-white",
 									}}
-									viewTransition
 								>
 									Projets
 								</Link>
@@ -82,7 +80,6 @@ export default function Navbar() {
 									activeProps={{
 										className: "text-white",
 									}}
-									viewTransition
 								>
 									A propos
 								</Link>
