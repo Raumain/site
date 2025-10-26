@@ -42,7 +42,7 @@ function RouteComponent() {
 
 	return (
 		<article id="project-details">
-			<div className="aspect-6/5 w-full h-[40vh] sm:h-[50vh] md:h-[60vh] overflow-hidden mb-3 sm:mb-4 absolute top-0 left-0">
+			<div className="aspect-6/5 w-full h-[40svh] sm:h-[50svh] md:h-[60svh] overflow-hidden mb-3 sm:mb-4 absolute top-0 left-0">
 				<img
 					src={resolveAssetPath(project.image)}
 					alt={project.title}
@@ -53,7 +53,7 @@ function RouteComponent() {
 					height="1080"
 				/>
 			</div>
-			<div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-[45vh] sm:mt-[55vh] md:mt-[65vh]">
+			<div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-[45svh] sm:mt-[55svh] md:mt-[65svh]">
 				<nav aria-label="Fil d'ariane" className="mb-4 sm:mb-6">
 					<ol className="flex items-center gap-2 text-lg text-gray-400 font-apotek-condensed">
 						<li>
