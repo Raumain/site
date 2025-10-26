@@ -94,7 +94,7 @@ export default function Footer() {
 					<ul className="flex flex-col gap-4 sm:gap-6 md:gap-8">
 						<li>
 							<a
-								href="https://www.instagram.com"
+								href="https://www.instagram.com/yannbaudin/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="font-apotek-condensed text-[#44FFDD] text-xl sm:text-2xl md:text-3xl hover:underline focus:outline-none focus:underline"
@@ -105,7 +105,7 @@ export default function Footer() {
 						</li>
 						<li>
 							<a
-								href="https://www.linkedin.com"
+								href="https://www.linkedin.com/in/yann-baudin-b87b92225/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="font-apotek-condensed text-[#44FFDD] text-xl sm:text-2xl md:text-3xl hover:underline focus:outline-none focus:underline"
@@ -116,7 +116,7 @@ export default function Footer() {
 						</li>
 						<li>
 							<a
-								href="https://www.behance.net"
+								href="https://www.behance.net/yannbaudin"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="font-apotek-condensed text-[#44FFDD] text-xl sm:text-2xl md:text-3xl hover:underline focus:outline-none focus:underline"
