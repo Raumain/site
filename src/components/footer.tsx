@@ -65,7 +65,7 @@ export default function Footer() {
 							<button
 								type="button"
 								onClick={(e) => handleNavigateToSection(e, "game-plan")}
-								className="text-white text-xl sm:text-2xl md:text-3xl font-apotek-condensed hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:text-[#44FFDD] focus:underline cursor-pointer text-left"
+								className="uppercase text-white text-xl sm:text-2xl md:text-3xl font-apotek-condensed hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:text-[#44FFDD] focus:underline cursor-pointer text-left"
 								aria-label="Aller à la section services"
 							>
 								Services
@@ -84,7 +84,7 @@ export default function Footer() {
 							<button
 								type="button"
 								onClick={(e) => handleNavigateToSection(e, "kick-off")}
-								className="inline-flex items-center font-apotek-condensed justify-center px-4 sm:px-6 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-xl sm:text-2xl md:text-3xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 w-fit focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
+								className="uppercase inline-flex items-center font-apotek-condensed justify-center px-4 sm:px-6 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-xl sm:text-2xl md:text-3xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 w-fit focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
 								aria-label="Aller à la section contact"
 							>
 								Contacter
