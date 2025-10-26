@@ -156,19 +156,13 @@ function GamePlanSection() {
 					services={designSportifServices}
 				/>
 			</div>
-			<button
-				type="button"
-				onClick={() => {
-					const section = document.getElementById("game-plan");
-					if (section) {
-						section.scrollIntoView({ behavior: "smooth" });
-					}
-				}}
+			<a
+				href="https://www.notion.so/FICHE-TARIFS-252364791ca580509f60ef23483dc977?source=copy_link"
 				className="font-apotek-condensed bg-[#44FFDD] border border-[#44FFDD] w-fit self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl px-8 sm:px-16 md:px-24 lg:px-32 py-2 mt-8 sm:mt-10 md:mt-12 hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
 				aria-label="Retourner en haut de la section services"
 			>
 				Voir tous les services
-			</button>
+			</a>
 		</section>
 	);
 }
