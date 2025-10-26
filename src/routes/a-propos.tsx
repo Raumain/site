@@ -47,8 +47,8 @@ function RouteComponent() {
 						headingId="a-propos-heading"
 					/>
 				</header>
-				<div className="flex flex-col lg:flex-row items-start justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 w-full">
-					<figure className="w-full lg:w-1/2">
+				<div className="flex flex-col lg:grid lg:grid-cols-2 items-start justify-center gap-8 w-full lg:grid-rows-1">
+					<figure className="w-full">
 						<img
 							src={yann}
 							alt="Yann Baudin - Graphiste freelance spécialisé en design sportif"
@@ -59,12 +59,12 @@ function RouteComponent() {
 							height="1000"
 						/>
 					</figure>
-					<article className="flex flex-col justify-between w-full lg:w-1/2 h-auto lg:h-full gap-12 sm:gap-20 md:gap-24 lg:gap-28">
-						<section>
-							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 md:px-8 py-1 w-fit mb-3 sm:mb-4">
+					<article className="flex flex-col justify-between w-full h-full gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+						<section className="flex flex-col">
+							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-[clamp(0.8rem,1.2vw,5rem)] px-4 sm:px-6 md:px-8 py-1 w-fit mb-2 sm:mb-3">
 								#ÉTUDES
 							</h2>
-							<p className="text-white font-helvetica text-sm sm:text-base md:text-lg leading-relaxed">
+							<p className="text-white text-[clamp(0.55rem,0.9vw,5rem)] leading-snug sm:leading-normal">
 								Titulaire d'un Master en Création Numérique à l'Université
 								Polytechnique des Hauts-de-France, j'ai acquis une solide
 								expertise en design graphique, direction artistique et
@@ -73,11 +73,11 @@ function RouteComponent() {
 								une sensibilité particulière pour l'univers du sport.
 							</p>
 						</section>
-						<section>
-							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 md:px-8 py-1 w-fit mb-3 sm:mb-4">
+						<section className="flex flex-col">
+							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-[clamp(0.8rem,1.2vw,5rem)] px-4 sm:px-6 md:px-8 py-1 w-fit mb-2 sm:mb-3">
 								#EXPÉRIENCES_PRO
 							</h2>
-							<p className="text-white font-helvetica text-sm sm:text-base md:text-lg leading-relaxed">
+							<p className="text-white text-[clamp(0.55rem,0.9vw,5rem)] leading-snug sm:leading-normal">
 								J'ai eu l'opportunité d'évoluer au sein de l'AS Monaco FC en
 								tant que graphiste stagiaire. Cette expérience au cœur d'un club
 								professionnel m'a permis de confronter mes compétences aux
@@ -86,11 +86,11 @@ function RouteComponent() {
 								les équipes communication, marketing et social media.
 							</p>
 						</section>
-						<section>
-							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 md:px-8 py-1 w-fit mb-3 sm:mb-4">
+						<section className="flex flex-col">
+							<h2 className="bg-[#FF9BFF] font-apotek-condensed text-[clamp(0.8rem,1.2vw,5rem)] px-4 sm:px-6 md:px-8 py-1 w-fit mb-2 sm:mb-3">
 								#COMPÉTENCES
 							</h2>
-							<p className="text-white font-helvetica text-sm sm:text-base md:text-lg leading-relaxed">
+							<p className="text-white text-[clamp(0.55rem,0.9vw,5rem)] leading-snug sm:leading-normal">
 								Maîtrise de la suite Adobe (Photoshop, Illustrator, InDesign,
 								After Effects) et de Figma. Je conçois des visuels impactants
 								pour le print et le digital : affiches, contenus réseaux
