@@ -1,8 +1,6 @@
-import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 export const Route = createRootRoute({
 	component: RootComponent,
@@ -22,17 +20,6 @@ function RootComponent() {
 				<Outlet />
 			</main>
 			<Footer />
-			<TanStackDevtools
-				config={{
-					position: "bottom-right",
-				}}
-				plugins={[
-					{
-						name: "Tanstack Router",
-						render: <TanStackRouterDevtoolsPanel />,
-					},
-				]}
-			/>
 		</>
 	);
 }
