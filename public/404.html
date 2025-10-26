@@ -9,7 +9,10 @@
       // Cette page 404 est un script qui redirige vers index.html avec le path original
       // pour permettre le routing client-side avec GitHub Pages
       
-      var pathSegmentsToKeep = 0;
+      // IMPORTANT: Pour un repo GitHub Pages sous un sous-dossier comme /site/,
+      // pathSegmentsToKeep doit être égal au nombre de segments dans le basepath
+      // Par exemple: /site/ = 1 segment, /site/app/ = 2 segments
+      var pathSegmentsToKeep = 1;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
