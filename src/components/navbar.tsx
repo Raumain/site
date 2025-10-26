@@ -89,7 +89,7 @@ export default function Navbar() {
 						<button
 							type="button"
 							onClick={(e) => handleNavigateToSection(e, "kick-off")}
-							className="uppercase inline-flex items-center justify-center px-3 sm:px-4 md:px-6 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-sm sm:text-base md:text-xl lg:text-2xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
+							className="uppercase inline-flex items-center justify-center px-3 sm:px-4 md:px-6 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-sm sm:text-base md:text-xl lg:text-2xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none "
 							aria-label="Aller à la section contact"
 						>
 							Contacter

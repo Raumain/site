@@ -158,7 +158,7 @@ function GamePlanSection() {
 			</div>
 			<a
 				href="https://www.notion.so/FICHE-TARIFS-252364791ca580509f60ef23483dc977?source=copy_link"
-				className="font-apotek-condensed bg-[#44FFDD] border border-[#44FFDD] w-fit self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl px-8 sm:px-16 md:px-24 lg:px-32 py-2 mt-8 sm:mt-10 md:mt-12 hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
+				className="font-apotek-condensed bg-[#44FFDD] border border-[#44FFDD] w-fit self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl px-8 sm:px-16 md:px-24 lg:px-32 py-2 mt-8 sm:mt-10 md:mt-12 hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 focus:outline-none "
 				aria-label="Retourner en haut de la section services"
 			>
 				Voir tous les services
@@ -284,7 +284,7 @@ function App() {
 										id="name"
 										required
 										placeholder="Nom et prénom"
-										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#44FFDD]"
+										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white text-sm sm:text-base focus:outline-none"
 										aria-required="true"
 										disabled={isSubmitting}
 									/>
@@ -299,7 +299,7 @@ function App() {
 										id="email"
 										required
 										placeholder="Email"
-										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#44FFDD]"
+										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white text-sm sm:text-base focus:outline-none"
 										aria-required="true"
 										disabled={isSubmitting}
 									/>
@@ -313,7 +313,7 @@ function App() {
 										id="description"
 										required
 										placeholder="Projet & Budget"
-										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white min-h-32 sm:min-h-40 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#44FFDD] resize-y"
+										className="bg-[#464646] border-none px-4 sm:px-6 py-3 sm:py-4 w-full placeholder:text-[#FFFFFF80] font-apotek text-white min-h-32 sm:min-h-40 text-sm sm:text-base focus:outline-none resize-y"
 										aria-required="true"
 										disabled={isSubmitting}
 									/>
@@ -341,7 +341,7 @@ function App() {
 								)}
 								<button
 									type="submit"
-									className="font-apotek-condensed bg-[#44FFDD] border border-[#44FFDD] w-full self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl px-8 sm:px-16 md:px-24 lg:px-32 py-2 mt-4 sm:mt-8 md:mt-12 hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
+									className="font-apotek-condensed bg-[#44FFDD] border border-[#44FFDD] w-full self-center text-xl sm:text-2xl md:text-3xl lg:text-4xl px-8 sm:px-16 md:px-24 lg:px-32 py-2 mt-4 sm:mt-8 md:mt-12 hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none "
 									disabled={isSubmitting}
 									aria-label="Envoyer le formulaire de contact"
 								>

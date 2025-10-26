@@ -35,7 +35,7 @@ export default function Footer() {
 					<Link
 						to="/"
 						aria-label="Retour à l'accueil"
-						className="focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919] rounded"
+						className="focus:outline-none rounded"
 					>
 						<img
 							src={logo}
@@ -82,7 +82,7 @@ export default function Footer() {
 							<button
 								type="button"
 								onClick={(e) => handleNavigateToSection(e, "kick-off")}
-								className="uppercase inline-flex items-center font-apotek-condensed justify-center px-3 sm:px-4 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-base sm:text-lg md:text-xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 w-fit focus:outline-none focus:ring-2 focus:ring-[#44FFDD] focus:ring-offset-2 focus:ring-offset-[#191919]"
+								className="uppercase inline-flex items-center font-apotek-condensed justify-center px-3 sm:px-4 py-1 bg-[#44FFDD] text-[#191919] border border-[#44FFDD] text-base sm:text-lg md:text-xl font-medium hover:bg-[#191919] hover:text-[#44FFDD] transition-colors duration-200 w-fit focus:outline-none"
 								aria-label="Aller à la section contact"
 							>
 								Contacter
