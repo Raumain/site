@@ -1,9 +1,15 @@
 import { createRootRoute, Outlet } from "@tanstack/react-router";
 import Footer from "@/components/footer";
+import Loader from "@/components/loader";
 import Navbar from "@/components/navbar";
 
 export const Route = createRootRoute({
 	component: RootComponent,
+	pendingComponent: () => (
+		<div className="min-h-screen flex items-center justify-center bg-[#191919]">
+			<Loader size={250} />
+		</div>
+	),
 });
 
 function RootComponent() {

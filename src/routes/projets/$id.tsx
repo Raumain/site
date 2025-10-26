@@ -1,10 +1,16 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import Loader from "@/components/loader";
 import ProjectsSelection from "@/components/projects-selection";
 import data from "@/data.json";
 import { resolveAssetPath } from "@/utils/assets";
 
 export const Route = createFileRoute("/projets/$id")({
 	component: RouteComponent,
+	pendingComponent: () => (
+		<div className="min-h-screen flex items-center justify-center bg-[#191919]">
+			<Loader size={250} />
+		</div>
+	),
 	loader: ({ params }) => {
 		const project = data.find((p) => p.id === Number(params.id));
 		if (!project) {
